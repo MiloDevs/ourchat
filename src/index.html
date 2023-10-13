@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- choose one -->
+    <script src="/node_modules/feather-icons/dist/feather.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="bg-neutral-900 flex flex-col w-full h-screen overflow-hidden">
+    <nav class="container flex mx-auto justify-between items-center px-6 mt-6">
+        <h1 class="text-neutral-700 text-2xl font-semibold">Messages</h1>
+        <i class="text-neutral-700 text-2xl" data-feather="menu"></i>
+
+    </nav>
+    <div id="search_menu" class="container mx-auto  mt-6 px-6">
+        <div class="relative">
+            <input aria-label="search_contacts" type="search" name="search_contact" id="search_contacts" class="px-2 pl-5 py-3 w-full outline-none border-none text-white rounded-full bg-neutral-800 placeholder:text-neutral-600 placeholder:text-xl" placeholder="Search...">
+            <i class="text-neutral-500 absolute top-1/2 -translate-y-1/2 font-bold mr-3 right-0" data-feather="search"></i>
+        </div>
+    </div>
+
+    <div id="currently_active" class="px-6 mt-3 text-sm">
+        <div class="flex items-center space-x-2">
+            <h1 class="text-neutral-400">Currently Active</h1>
+            <div class="bg-green-500 h-2 w-2 rounded-full"></div>
+        </div>
+        <div class="mt-2 flex space-x-4">
+            <div class="w-12 h-12 outline outline-offset-2 outline-neutral-600 bg-purple-600 rounded-full flex items-center justify-center">
+                <i class="text-white h-5 w-5" data-feather="plus-circle"></i>
+            </div>
+            <div class="w-12 h-12 outline outline-offset-2 outline-purple-600  rounded-full flex items-center justify-center">
+                <img
+                class="h-full w-auto rounded-full object-cover"
+                src="https://api.dicebear.com/7.x/adventurer/svg?seed=Gracie"
+                alt="avatar" />
+            </div>
+            <div class="w-12 h-12 outline outline-offset-2 outline-purple-600  rounded-full flex items-center justify-center">
+                <img
+                class="h-full w-auto rounded-full object-cover"
+                src="https://api.dicebear.com/7.x/adventurer/svg?seed=Gracie"
+                alt="avatar" />
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="flex-1 flex flex-col mt-6 rounded-t-2xl bg-white">
+        <div class="w-full items-center justify-center flex py-2">
+            <button class="w-2/6 h-1 bg-neutral-200 rounded-full"></button>
+        </div>
+        <div class="">
+            <div id="chats_list" class="chats_list h-full overflow-y-scroll w-full mt-3 ">
+            <ul class="w-full h-screen">
+                <li class="border-b-2 last:border-b-0">
+                    <a href="#" class="flex w-full px-2 py-2 justify-between">
+                        <div class="h-16 w-16 rounded-full bg-neutral-200">
+                            <img
+                            class="h-full w-auto rounded-full object-cover p-0.5"
+                            src="https://api.dicebear.com/7.x/adventurer/svg?seed=Gracie"
+                            alt="avatar" />
+                        </div>
+                        <div class="flex-1 ml-2">
+                            <h1 class="font-semibold text-xl mb-1">Milo</h1>
+                            <h2 class="text-neutral-400 font-semibold text-sm">Okay sure</h2>
+                        </div>
+                        <div>
+                            <h1 class="text-neutral-400 mb-2">12:51PM</h1>
+                            <p class="flex">
+                                <i class="h-4 w-4" data-feather="check"></i>
+                                <i class="h-4 w-4" data-feather="check"></i>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="border-b-2 last:border-b-0">
+                    <a href="#" class="flex w-full px-2 py-2 justify-between">
+                        <div class="h-16 w-16 rounded-full bg-neutral-200">
+                            <img
+                            class="h-full w-auto rounded-full object-cover p-0.5"
+                            src="https://api.dicebear.com/7.x/adventurer/svg?seed=Gracie"
+                            alt="avatar" />
+                        </div>
+                        <div class="flex-1 ml-2">
+                            <h1 class="font-semibold text-xl mb-1">Milo</h1>
+                            <h2 class="text-neutral-400 font-semibold text-sm">Okay sure</h2>
+                        </div>
+                        <div>
+                            <h1 class="text-neutral-400 mb-2">12:51PM</h1>
+                            <p class="flex">
+                                <i class="h-4 w-4" data-feather="check"></i>
+                                <i class="h-4 w-4" data-feather="check"></i>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="border-b-2 last:border-b-0">
+                    <a href="#" class="flex w-full px-2 py-2 justify-between">
+                        <div class="h-16 w-16 rounded-full bg-neutral-200">
+                            <img
+                            class="h-full w-auto rounded-full object-cover p-0.5"
+                            src="https://api.dicebear.com/7.x/adventurer/svg?seed=Gracie"
+                            alt="avatar" />
+                        </div>
+                        <div class="flex-1 ml-2">
+                            <h1 class="font-semibold text-xl mb-1">Milo</h1>
+                            <h2 class="text-neutral-400 font-semibold text-sm">Okay sure</h2>
+                        </div>
+                        <div>
+                            <h1 class="text-neutral-400 mb-2">12:51PM</h1>
+                            <p class="flex">
+                                <i class="h-4 w-4" data-feather="check"></i>
+                                <i class="h-4 w-4" data-feather="check"></i>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+               
+            </ul>
+        </div>
+        </div>
+    </div>
+
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
